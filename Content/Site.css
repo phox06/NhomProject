@@ -62,51 +62,7 @@ header {
         width: 20px;
         height: 20px;
     }
-/* --- Thanh Danh Mục Sản Phẩm --- */
-.product-category-bar {
-    background-color: skyblue; /* Màu vàng đặc trưng */
-    padding: 5px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.5); /* Đường kẻ mờ phía trên */
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05); /* Đường kẻ mờ phía dưới */
-}
 
-.category-list {
-    display: flex;
-    justify-content: space-between; /* Căn đều các mục */
-    align-items: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-    .category-list li a {
-        display: flex;
-        align-items: center;
-        gap: 8px; /* Khoảng cách giữa icon và chữ */
-        text-decoration: none;
-        color: #333;
-        font-size: 14px;
-        font-weight: bold;
-        padding: 10px 12px;
-        border-radius: 5px;
-        transition: background-color 0.2s ease;
-    }
-
-        .category-list li a:hover {
-            background-color: rgba(0, 0, 0, 0.05); /* Hiệu ứng khi di chuột vào */
-        }
-
-        .category-list li a .fas { /* Định dạng chung cho icon */
-            font-size: 20px;
-            width: 22px; /* Đảm bảo các icon có chiều rộng nhất quán */
-            text-align: center;
-        }
-
-        .category-list li a .dropdown-arrow { /* Mũi tên xổ xuống */
-            font-size: 10px;
-            margin-left: 2px;
-            vertical-align: middle;
-        }
 /* BANNER DEAL */
 .deal-banner {
     width: 1200px;
@@ -482,6 +438,76 @@ header {
     border-radius: 4px;
 }
 
+
     .badge.hot-deal {
         background-color: #ffA500;
     }
+
+footer {
+    background-color: #222;
+    color: #ddd;
+    padding: 40px 0 20px;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    gap: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+    .footer-section h3,
+    .footer-section h4 {
+        color: #fff;
+        margin-bottom: 15px;
+    }
+
+    .footer-section p {
+        line-height: 1.6;
+    }
+
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .footer-section ul li {
+            margin: 6px 0;
+        }
+
+            .footer-section ul li a {
+                color: #ccc;
+                text-decoration: none;
+                transition: color 0.3s;
+            }
+
+                .footer-section ul li a:hover {
+                    color: #f8b400;
+                }
+
+.social-links a {
+    color: #ccc;
+    margin-right: 10px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+    .social-links a:hover {
+        color: #f8b400;
+    }
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    margin-top: 30px;
+    color: #aaa;
+}
